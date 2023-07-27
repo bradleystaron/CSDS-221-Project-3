@@ -1,0 +1,227 @@
+/* Styling for the entire body */
+body {
+  /* Create a linear gradient background from top-left to bottom-right */
+  background: linear-gradient(to bottom right, #198b43, #052413);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  font-family: "garamond", Times, serif;
+}
+
+/* Heading 1 style */
+h1 {
+  font-size: 4em;
+}
+
+/* Heading 2 style */
+h2 {
+  font-size: 3em;
+}
+
+/* Heading 3 style */
+h3 {
+  font-size: 2em;
+}
+
+/* Paragraph style */
+p {
+  font-size: 1em;
+}
+
+/* Unordered list style */
+ul {
+  list-style: none;
+}
+
+/* Styling for a card element */
+.card {
+  background: linear-gradient(to bottom right, #f4f4f4, #efefef);
+  width: 14em;
+  height: 20.4em;
+  padding-left: 1em;
+  padding-top: 01em;
+  margin: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.4em;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Styling for images inside a card */
+.card img {
+  width: 2em;
+}
+
+/* Styling for heading 3 inside a card */
+.card h3 {
+  display: inline-block;
+  font-size: 2.75em;
+  padding: 0em;
+  margin: 0em;
+}
+
+/* Styling for elements within classes "undealed_player" & "undealed_dealer */
+.undealed_player {
+  opacity: 0;
+  bottom: 40em;
+}
+
+.undealed_dealer {
+  opacity: 0;
+  bottom: 10em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styling for elements with class "flipped" */
+.flipped {
+  background-image: url("images/card_back.png");
+  background-size: cover; /* Scales the background image to cover the entire element */
+  z-index: 10;
+  position: absolute;
+  top: 2em;
+  left: 9em;
+}
+
+/* Styling for button elements */
+
+.button_list button {
+  background: linear-gradient(to bottom right, #d84242, #a71f1e);
+  border-radius: 50em;
+  width: 15em;
+  height: 15em;
+  border-width: 0.5em;
+  border-color: #f4f4f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
+}
+
+.button_list button:disabled {
+  color: black;
+}
+
+.button_list button h3 {
+  color: #f4f4f4;
+  font-size: 3.4em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Styling for player and dealer hand elements */
+
+#player_hand {
+  position: fixed;
+  bottom: 3%;
+  left: 25%;
+}
+
+#player_hand li,
+#dealer_hand li {
+  margin: 0 -4em;
+}
+
+#dealer_hand {
+  position: fixed;
+  left: 40%;
+  top: 3%;
+}
+
+/* Styling for event handling */
+#big_event_message_holder,
+#bet_wrapper {
+  background-color: rgba(5, 36, 19, 0.9);
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 130%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 999;
+  font-family: Garamond, Times, "Times New Roman", serif;
+}
+
+#big_event_message_holder h3 {
+  font-weight: 100;
+}
+
+#hit,
+#button_more_bet {
+  position: fixed;
+  right: 3em;
+  bottom: 3em;
+}
+
+#button_set_bet {
+  position: fixed;
+  bottom: 3em;
+  left: 43.5%;
+}
+
+#stand,
+#button_less_bet {
+  position: fixed;
+  left: 3em;
+  bottom: 3em;
+}
+
+/* Styling for player and dealer scoring */
+.score,
+#ace_becomes_one_player {
+  background-color: rgba(5, 36, 19, 0.7);
+  border-radius: 1em;
+  width: 12em;
+  border-style: solid;
+  border-color: #f4f4f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.score p,
+#ace_becomes_one_player {
+  color: #f4f4f4;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0.3em 0;
+}
+
+#dealer_score {
+  position: fixed;
+  top: 1%;
+  left: 23%;
+  z-index: 999;
+}
+
+#player_score {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  z-index: 999;
+}
+
+#ace_becomes_one_player {
+  position: fixed;
+  bottom: 0.3%;
+  right: 51%;
+  z-index: 999;
+  width: 21em;
+  padding: 0.35em;
+}
+
+/* Styling for player's bank & betting option */
+#bank {
+  position: fixed;
+  bottom: 87%;
+  right: 1%;
+  z-index: 999;
+}
+
+#bet {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  z-index: 999;
+}

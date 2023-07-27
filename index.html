@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bradley Staron Blackjack</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- External JavaScript libraries -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Element to display dealer's score (hidden by default) -->
+    <div class="score hidden" id="dealer_score">
+      <p>Dealer score <span></span></p>
+    </div>
+
+    <!-- Element to display various messages during the game (hidden by default) -->
+    <div id="big_event_message_holder" class="hidden">
+      <h1>
+        <img src="images/heart-poker-piece.png" style="width: 0.7em" /><img
+          src="images/spades-poker-piece-white.png"
+          style="width: 0.7em"
+        />
+        Blackjack <img src="images/chip-with-club-white.png" style="width: 0.7em" /><img
+          src="images/diamond-poker-piece.png"
+          style="width: 0.7em"
+        />
+      </h1>
+      <h3></h3>
+      <h2></h2>
+    </div>
+
+    <!-- Element to display dealer's hand of cards -->
+    <ul class="hand" id="dealer_hand"></ul>
+
+    <!-- Wrapper for setting the initial bank and bet amount (hidden by default) -->
+    <div id="bet_wrapper" class="hidden">
+      <div id="set_bank">
+        <h3>Bank: <span></span>$</h3>
+      </div>
+      <div id="set_bet">
+        <h3>Bet <span></span>$</h3>
+      </div>
+    </div>
+
+    <!-- Element to display the current bet amount (hidden by default) -->
+    <div class="score hidden" id="bet">
+      <p>Bet <span>25</span>$</p>
+    </div>
+
+    <!-- Element to display the current bank amount (hidden by default) -->
+    <div class="score hidden" id="bank">
+      <p>Bank <span>100</span>$</p>
+    </div>
+
+    <!-- Element to display the current bank amount (hidden by default) -->
+    <div id="ace_becomes_one_player" class="score hidden">Total score over 21. Ace value becomes 1</div>
+
+    <!-- Element to display player's hand of cards -->
+    <ul class="hand" id="player_hand"></ul>
+
+    <!-- Buttons for player actions (hidden by default) -->
+    <ul class="button_list">
+      <button id="stand" class="hidden">
+        <h3>Stand</h3>
+      </button>
+      <button id="hit" class="hidden">
+        <h3>Hit</h3>
+      </button>
+    </ul>
+    
+    <!-- Buttons for setting the bet amount (hidden by default) -->
+    <ul class="button_list hidden" id="bet_buttons">
+      <button id="button_less_bet"><h3>-</h3></button>
+      <button id="button_set_bet"><h3>Set Bet</h3></button>
+      <button id="button_more_bet"><h3>+</h3></button>
+    </ul>
+
+    <!-- Element to display player's score (hidden by default) -->
+    <div class="score hidden" id="player_score">
+      <p>Player score <span></span></p>
+    </div>
+  </body>
+</html>
